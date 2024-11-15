@@ -2389,7 +2389,7 @@ footer .footer_wrap .footer_bottom .footer_bottom_right p {
     .s2_s3_wrapper {
         height: calc(1300px + 150vh);
     }
-    .s2 {height: 1200px;}
+    .s2 {height: 1200px; padding-top: 0;}
     .s2 .s2_top {display: none;}
     .s2 .s2_middle {display: initial;}
     .s2 .s2_middle .s2_scroll_pin {display: initial;}
