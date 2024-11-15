@@ -17,37 +17,6 @@ $(function(){
 
     // 브라우저의 넓이가 1200이상 이면
     if($(window).width()>=1200){
-        // 새 창을 열었을 때, 실행
-        window.onload = function() {
-            setTimeout(function(){
-                $(".s1_slide2").addClass("load");
-            }, 250);
-            $(".s1_slide3").addClass("load");
-            setTimeout(function(){
-                $(".s1_slide2_number").addClass("load");
-                $(".s1_slide3_number").addClass("load");
-                $("header").addClass("load");
-            }, 750);
-            setTimeout(function(){
-                $(".s1_slide1_bg").addClass("load");
-            }, 1200);
-        }
-
-        // 새로고침 할 때, 실행
-        window.addEventListener('load', function() {
-            setTimeout(function(){
-                $(".s1_slide2").addClass("load");
-            }, 250);
-            $(".s1_slide3").addClass("load");
-            setTimeout(function(){
-                $(".s1_slide2_number").addClass("load");
-                $(".s1_slide3_number").addClass("load");
-                $("header").addClass("load");
-            }, 750);
-            setTimeout(function(){
-                $(".s1_slide1_bg").addClass("load");
-            }, 1200);
-        });
         // 내비게이션 마우스 이벤트
         $(".header_middle nav").mouseenter(function(){
             sw3 = 0;
