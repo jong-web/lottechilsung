@@ -1438,4 +1438,22 @@
         <img src="img/right_icon.png" alt="오른쪽방향">
     </div>
 </body>
+<script>
+    if($(window).width()>=1200){
+        window.addEventListener('load', function() {
+            setTimeout(function(){
+                $(".s1_slide2").addClass("load");
+            }, 250);
+            $(".s1_slide3").addClass("load");
+            setTimeout(function(){
+                $(".s1_slide2_number").addClass("load");
+                $(".s1_slide3_number").addClass("load");
+                $("header").addClass("load");
+            }, 750);
+            setTimeout(function(){
+                $(".s1_slide1_bg").addClass("load");
+            }, 1200);
+        });
+    }
+</script>
 </html>
