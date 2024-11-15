@@ -720,10 +720,10 @@ $(function(){
             // console.log(body); // 15016
             // console.log(scrollBottom); // 14097
             // console.log(vh(100)); // 919
-            let section2Top1 = body - $(".s2").offset().top-50;
-            let section2Top2 = body - $(".s2").offset().top-200;
-            let section2Top3 = body - $(".s2").offset().top-400;
-            let section2Top4 = body - $(".s2").offset().top-550;
+            let section2Top1 = body - $(".s2_top").offset().top;
+            let section2Top2 = body - $(".s2_left h2").offset().top;
+            let section2Top3 = body - $(".s2_search").offset().top;
+            let section2Top4 = body - $(".s2_left .hashtag").offset().top;
             if(section2Top1 > scrollBottom) {
                 $(".s2_top").addClass("child_ani");
             } else {
