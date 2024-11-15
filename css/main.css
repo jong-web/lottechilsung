@@ -2462,7 +2462,7 @@ footer .footer_wrap .footer_bottom .footer_bottom_right p {
         margin-top: 2rem;
     }
     .s3 .section3_Swiper2 .swiper-slide .card img {
-        overflow: visible;
+        /* overflow: visible; */
         width: 45%; height: 45%;
     }
     .swiper-button-prev {
