@@ -541,20 +541,30 @@ $(function(){
                 clickable : true,
             },
         });
+
         // section s4 swiper
         const newsSwiper3 = new Swiper(".section4_Swiper", {
             slidesPerView: 'auto',  
             spaceBetween: 55,
         });
+
         // section s6 swiper
-        const newsSwiper6 = new Swiper(".s5_right", {
-            slidesPerView: 'auto',
-            spaceBetween: 15,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable : true,
-            },
+        function initializeSwiper() {
+            const newsSwiper6 = new Swiper(".s5_right", {
+                slidesPerView: 'auto',
+                spaceBetween: 15,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable : true,
+                },
+            });
+        }
+        initializeSwiper();
+        window.addEventListener('resize', function(){
+            newsSwiper6.destroy();
+            initializeSwiper();
         });
+
         $(window).scroll(function(){
             var body = $(document).height();
             var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
