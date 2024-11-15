@@ -548,7 +548,7 @@ $(function(){
             spaceBetween: 55,
         });
 
-        // section s6 swiper
+        // section s5 swiper
         function initializeSwiper() {
             const newsSwiper6 = new Swiper(".s5_right", {
                 slidesPerView: 'auto',
@@ -559,16 +559,17 @@ $(function(){
                 },
             });
         }
-        initializeSwiper();
-        window.addEventListener('resize', function(){
-            newsSwiper6.destroy();
-            initializeSwiper();
-        });
 
         $(window).scroll(function(){
             var body = $(document).height();
             var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
             $("section").each(function(){
+                // section5 resize
+                initializeSwiper();
+                window.addEventListener('resize', function(){
+                    newsSwiper6.destroy();
+                    initializeSwiper();
+                });
                 let section3Top = body - $(".s3 .section3_Swiper2").offset().top;
                 if(section3Top > scrollBottom) {
                     $(".section3_Swiper2").addClass("child_ani");
