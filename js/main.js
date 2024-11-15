@@ -528,17 +528,20 @@ $(function(){
                 },
             });
         }
-        initializeSwiper();
-        window.addEventListener('resize', function(){
-            newsSwiper6.destroy();
-            initializeSwiper();
-        });
 
         $(window).scroll(function(){
             var body = $(document).height();
             var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
             $("section").each(function(){
+                let section2Top = body - $(".s2").offset().top;
                 let section3Top = body - $(".s3 .section3_Swiper2").offset().top;
+                if(section2Top > scrollBottom && section3Top < scrollBottom) {
+                    initializeSwiper();
+                    window.addEventListener('resize', function(){
+                        newsSwiper6.destroy();
+                        initializeSwiper();
+                    });
+                }
                 if(section3Top > scrollBottom) {
                     $(".section3_Swiper2").addClass("child_ani");
                 } else {
