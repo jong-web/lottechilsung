@@ -559,17 +559,16 @@ $(function(){
                 },
             });
         }
+        initializeSwiper();
+        window.addEventListener('resize', function(){
+            newsSwiper6.destroy();
+            initializeSwiper();
+        });
 
         $(window).scroll(function(){
             var body = $(document).height();
             var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
             $("section").each(function(){
-                // section5 resize
-                initializeSwiper();
-                window.addEventListener('resize', function(){
-                    newsSwiper6.destroy();
-                    initializeSwiper();
-                });
                 let section3Top = body - $(".s3 .section3_Swiper2").offset().top;
                 if(section3Top > scrollBottom) {
                     $(".section3_Swiper2").addClass("child_ani");
