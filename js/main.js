@@ -526,6 +526,8 @@ $(function(){
                     el: '.swiper-pagination',
                     clickable : true,
                 },
+                observer: true,
+                observeParents: true,
             });
         }
         initializeSwiper();
