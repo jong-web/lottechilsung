@@ -2666,6 +2666,13 @@ footer .footer_wrap .footer_bottom .footer_bottom_right p {
         border-radius: 18px;
         opacity: 1;
     }
+    .s5 .s5_wrap .s5_right .cider1 {margin: 0;}
+    .s5 .s5_wrap .s5_right .cider2 {margin: 0;}
+    .s5 .s5_wrap .s5_right .cider3 {margin: 0;}
+    .s5 .s5_wrap .s5_right .cider4 {margin: 0;}
+    .s5 .s5_wrap .s5_right .cider5 {margin: 0;}
+    .s5 .s5_wrap .s5_right .cider6 {margin: 0;}
+    .s5 .s5_wrap .s5_right .cider7 {margin: 0;}
     /* section 6 */
     .s6 {
         padding: 3rem 9%;
