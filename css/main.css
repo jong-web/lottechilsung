@@ -2643,14 +2643,30 @@ footer .footer_wrap .footer_bottom .footer_bottom_right p {
         width: 250px; height: 400px;
         position: static;
         margin: 0;
+        border-radius: none;
+        display: flex;
+        flex-flow: column nowrap;
     }
     .s5 .s5_wrap .s5_right .s5_right_box img {
         display: block;
+        position: static;
         width: 250px; height: 280px;
         object-fit: contain;
     }
     .s5 .s5_wrap .s5_right .s5_right_box .des {
         width: 250px; height: 120px;
+        padding: 0.8rem;
+        position: static;
+    }
+    .s5 .s5_wrap .s5_right .s5_right_box .des span {
+        position: static;
+        top: 0; left: 0;
+        margin-bottom: 0.5rem;
+        line-height: 1.8rem;
+    }
+    .s5 .s5_wrap .s5_right .s5_right_box .des p {
+        position: static;
+        width: 96%;
     }
     .s5 .swiper-pagination {
         position: absolute;
