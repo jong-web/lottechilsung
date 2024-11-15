@@ -2641,6 +2641,7 @@ footer .footer_wrap .footer_bottom .footer_bottom_right p {
     }
     .s5 .s5_wrap .s5_right .s5_right_box {
         width: 250px; height: 400px;
+        position: static;
         margin: 0;
     }
     .s5 .s5_wrap .s5_right .s5_right_box img {
@@ -2648,7 +2649,7 @@ footer .footer_wrap .footer_bottom .footer_bottom_right p {
         object-fit: contain;
     }
     .s5 .s5_wrap .s5_right .s5_right_box .des {
-        width: 100%; height: 120px;
+        width: 250px; height: 120px;
     }
     .s5 .swiper-pagination {
         position: absolute;
