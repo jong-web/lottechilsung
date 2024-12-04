@@ -294,7 +294,11 @@ $(function(){
 
         // section s4 swiper
         const newsSwiper7 = new Swiper(".section4_Swiper", {
-            slidesPerView: 'auto',  
+            slidesPerView: 'auto',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable : true,
+            },
             spaceBetween: 15,
         });
 
@@ -513,7 +517,11 @@ $(function(){
 
         // section s4 swiper
         const newsSwiper3 = new Swiper(".section4_Swiper", {
-            slidesPerView: 'auto',  
+            slidesPerView: 'auto',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable : true,
+            },
             spaceBetween: 55,
         });
 
